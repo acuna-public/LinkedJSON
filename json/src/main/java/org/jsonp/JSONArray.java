@@ -311,7 +311,7 @@ public class JSONArray implements Iterable<Object> {
 
     /**
     * Get the enum value associated with an index.
-    * 
+    *
     * @param clazz
     *            The type of enum to retrieve.
     * @param index
@@ -682,7 +682,7 @@ public class JSONArray implements Iterable<Object> {
 
     /**
      * Get the enum value associated with a key.
-     * 
+     *
      * @param clazz
      *            The type of enum to retrieve.
      * @param index
@@ -695,7 +695,7 @@ public class JSONArray implements Iterable<Object> {
 
     /**
      * Get the enum value associated with a key.
-     * 
+     *
      * @param clazz
      *            The type of enum to retrieve.
      * @param index
@@ -727,8 +727,8 @@ public class JSONArray implements Iterable<Object> {
 
 
     /**
-     * Get the optional BigInteger value associated with an index. The 
-     * defaultValue is returned if there is no value for the index, or if the 
+     * Get the optional BigInteger value associated with an index. The
+     * defaultValue is returned if there is no value for the index, or if the
      * value is not a number and cannot be converted to a number.
      *
      * @param index
@@ -767,8 +767,8 @@ public class JSONArray implements Iterable<Object> {
     }
 
     /**
-     * Get the optional BigDecimal value associated with an index. The 
-     * defaultValue is returned if there is no value for the index, or if the 
+     * Get the optional BigDecimal value associated with an index. The
+     * defaultValue is returned if there is no value for the index, or if the
      * value is not a number and cannot be converted to a number.
      *
      * @param index
@@ -1213,7 +1213,7 @@ public class JSONArray implements Iterable<Object> {
     }
     
     /**
-     * Creates a JSONPointer using an initialization string and tries to 
+     * Creates a JSONPointer using an initialization string and tries to
      * match it to an item within this JSONArray. For example, given a
      * JSONArray initialized with this document:
      * <pre>
@@ -1221,7 +1221,7 @@ public class JSONArray implements Iterable<Object> {
      *     {"b":"c"}
      * ]
      * </pre>
-     * and this JSONPointer string: 
+     * and this JSONPointer string:
      * <pre>
      * "/0/b"
      * </pre>
@@ -1236,7 +1236,7 @@ public class JSONArray implements Iterable<Object> {
     }
     
     /**
-     * Uses a uaer initialized JSONPointer  and tries to 
+     * Uses a uaer initialized JSONPointer  and tries to
      * match it to an item whithin this JSONArray. For example, given a
      * JSONArray initialized with this document:
      * <pre>
@@ -1244,7 +1244,7 @@ public class JSONArray implements Iterable<Object> {
      *     {"b":"c"}
      * ]
      * </pre>
-     * and this JSONPointer: 
+     * and this JSONPointer:
      * <pre>
      * "/0/b"
      * </pre>
@@ -1261,7 +1261,7 @@ public class JSONArray implements Iterable<Object> {
     /**
      * Queries and returns a value from this object using {@code jsonPointer}, or
      * returns null if the query fails due to a missing key.
-     * 
+     *
      * @param jsonPointer the string representation of the JSON pointer
      * @return the queried value or {@code null}
      * @throws IllegalArgumentException if {@code jsonPointer} has invalid syntax
@@ -1273,7 +1273,7 @@ public class JSONArray implements Iterable<Object> {
     /**
      * Queries and returns a value from this object using {@code jsonPointer}, or
      * returns null if the query fails due to a missing key.
-     * 
+     *
      * @param jsonPointer The JSON pointer
      * @return the queried value or {@code null}
      * @throws IllegalArgumentException if {@code jsonPointer} has invalid syntax
@@ -1385,11 +1385,11 @@ public class JSONArray implements Iterable<Object> {
 
     /**
      * Make a pretty-printed JSON text of this JSONArray.
-     * 
+     *
      * <p>If <code>indentFactor > 0</code> and the {@link JSONArray} has only
      * one element, then the array will be output on a single line:
      * <pre>{@code [1]}</pre>
-     * 
+     *
      * <p>If an array has 2 or more elements, then it will be output across
      * multiple lines: <pre>{@code
      * [
@@ -1401,7 +1401,7 @@ public class JSONArray implements Iterable<Object> {
      * <p><b>
      * Warning: This method assumes that the data structure is acyclical.
      * </b>
-     * 
+     *
      * @param indentFactor
      *            The number of spaces to add to each level of indentation.
      * @return a printable, displayable, transmittable representation of the
@@ -1433,11 +1433,11 @@ public class JSONArray implements Iterable<Object> {
 
     /**
      * Write the contents of the JSONArray as JSON text to a writer.
-     * 
+     *
      * <p>If <code>indentFactor > 0</code> and the {@link JSONArray} has only
      * one element, then the array will be output on a single line:
      * <pre>{@code [1]}</pre>
-     * 
+     *
      * <p>If an array has 2 or more elements, then it will be output across
      * multiple lines: <pre>{@code
      * [

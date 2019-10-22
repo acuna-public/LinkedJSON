@@ -145,7 +145,7 @@ public class JSONTokener {
 
     /**
      * Checks if the end of the input has been reached.
-     *  
+     *
      * @return true if at the end of the file and we didn't step back
      */
     public boolean end() {
